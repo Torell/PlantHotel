@@ -5,10 +5,10 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        Cactus igge = new Cactus(namesOfPlants.IGGE, 0.2);
-        Palm laura = new Palm(namesOfPlants.LAURA, 5);
-        Palm olof = new Palm(namesOfPlants.OLOF, 1);
-        CarnivorousPlant meatloaf = new CarnivorousPlant(namesOfPlants.MEATLOAF, 0.7);
+        Cactus igge = new Cactus(namesOfPlants.IGGE, namesOfPlants.IGGE.getPlantLength());
+        Palm laura = new Palm(namesOfPlants.LAURA, namesOfPlants.LAURA.getPlantLength());
+        Palm olof = new Palm(namesOfPlants.OLOF, namesOfPlants.OLOF.getPlantLength());
+        CarnivorousPlant meatloaf = new CarnivorousPlant(namesOfPlants.MEATLOAF, namesOfPlants.MEATLOAF.getPlantLength());
 
         List<Plants> listOfPlants = new ArrayList<>();
         listOfPlants.add(igge);

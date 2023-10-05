@@ -1,13 +1,19 @@
 public enum namesOfPlants {
-    IGGE ("Igge"),
-    LAURA ("Laura"),
-    OLOF ("Olof"),
-    MEATLOAF ("Meatloaf");
+    IGGE ("Igge",0.2),
+    LAURA ("Laura",5.0),
+    OLOF ("Olof",1.0),
+    MEATLOAF ("Meatloaf",0.7);
 
-    public final String plantName;
+    protected final String plantName;
+    private final double plantLength;
 
-    namesOfPlants(String plantName) {
+    public double getPlantLength() {
+        return plantLength;
+    }
+
+    namesOfPlants(String plantName, double plantLength) {
         this.plantName = plantName;
+        this.plantLength = plantLength;
     }
 
     public String getPlantName() {
