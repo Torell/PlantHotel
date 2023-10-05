@@ -6,9 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
         Cactus igge = new Cactus(namesOfPlants.IGGE.getPlantName(), namesOfPlants.IGGE.getPlantLength());
-        Palm laura = new Palm(namesOfPlants.LAURA, namesOfPlants.LAURA.getPlantLength());
-        Palm olof = new Palm(namesOfPlants.OLOF, namesOfPlants.OLOF.getPlantLength());
-        CarnivorousPlant meatloaf = new CarnivorousPlant(namesOfPlants.MEATLOAF, namesOfPlants.MEATLOAF.getPlantLength());
+        Palm laura = new Palm(namesOfPlants.LAURA.getPlantName(), namesOfPlants.LAURA.getPlantLength());
+        Palm olof = new Palm(namesOfPlants.OLOF.getPlantName(), namesOfPlants.OLOF.getPlantLength());
+        CarnivorousPlant meatloaf = new CarnivorousPlant(namesOfPlants.MEATLOAF.getPlantName(), namesOfPlants.MEATLOAF.getPlantLength());
 
         List<Plants> listOfPlants = new ArrayList<>();
         listOfPlants.add(igge);
@@ -18,7 +18,7 @@ public class Main {
 
         outerLoop:
         while (true) {
-            String plantToBeFed = JOptionPane.showInputDialog(null, "Vilken växt ska få mat?").toUpperCase().trim();
+            String plantToBeFed = JOptionPane.showInputDialog(null, "Vilken växt ska få mat?").trim();
             if (plantToBeFed.isEmpty()) {
                 JOptionPane.showMessageDialog(null, "Vänligen ange ett namn på växten du vill mata");
                 continue;

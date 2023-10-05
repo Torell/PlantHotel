@@ -1,10 +1,10 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+
 
 class PalmTest {
-    private final Palm lauraTest = new Palm(namesOfPlants.LAURA, 10);
+    private final Palm lauraTest = new Palm(namesOfPlants.LAURA.getPlantName(), 10);
     @Test
     void TapWaterAmount() {
         double expectedWaterAmount = 5;

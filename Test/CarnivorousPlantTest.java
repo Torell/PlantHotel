@@ -1,11 +1,11 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+
 
 class CarnivorousPlantTest {
 
-    CarnivorousPlant test = new CarnivorousPlant(namesOfPlants.IGGE, 100);
+    CarnivorousPlant test = new CarnivorousPlant(namesOfPlants.IGGE.getPlantName(), 100);
 
     @Test
     void proteinShakeAmount() {

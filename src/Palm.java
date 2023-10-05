@@ -3,7 +3,7 @@ public class Palm extends Plants{
 
     private final double foodAmountPerMeter = 0.5;
 
-    public Palm(namesOfPlants name, double length) {
+    public Palm(String name, double length) {
         super(name, length);
     }
 

@@ -4,7 +4,7 @@ public class CarnivorousPlant extends Plants{
     private final double foodAmounntPerMeter = 0.2;
 
 
-    public CarnivorousPlant(namesOfPlants name, double length) {
+    public CarnivorousPlant(String name, double length) {
         super(name, length);
     }
 
