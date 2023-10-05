@@ -4,7 +4,7 @@ public enum namesOfPlants {
     OLOF ("Olof",1.0),
     MEATLOAF ("Meatloaf",0.7);
 
-    protected final String plantName;
+    private final String plantName;
     private final double plantLength;
 
     public double getPlantLength() {

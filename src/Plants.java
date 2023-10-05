@@ -11,12 +11,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Plants implements Food{
-    private namesOfPlants name;
+    private String name;
     private double length;
     private String filePath;
     private String foodType;
 
-    public Plants(namesOfPlants name, double length) {
+    public Plants(String name, double length) {
         this.name = name;
         this.length = length;
         this.filePath = "./src/" + name + "FeedingRecord.txt";
@@ -62,7 +62,7 @@ public abstract class Plants implements Food{
     }
 
     public String getName() {
-        return name.plantName;
+        return this.name;
     }
 
     public String getFilePath() {

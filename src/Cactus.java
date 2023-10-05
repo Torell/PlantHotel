@@ -3,7 +3,7 @@ public class Cactus extends Plants {
 
     private final double foodAmount = 0.2;
 
-    public Cactus(namesOfPlants name, double length) {
+    public Cactus(String name, double length) {
         super(name, length);
     }
 

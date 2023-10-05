@@ -5,7 +5,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        Cactus igge = new Cactus(namesOfPlants.IGGE, namesOfPlants.IGGE.getPlantLength());
+        Cactus igge = new Cactus(namesOfPlants.IGGE.getPlantName(), namesOfPlants.IGGE.getPlantLength());
         Palm laura = new Palm(namesOfPlants.LAURA, namesOfPlants.LAURA.getPlantLength());
         Palm olof = new Palm(namesOfPlants.OLOF, namesOfPlants.OLOF.getPlantLength());
         CarnivorousPlant meatloaf = new CarnivorousPlant(namesOfPlants.MEATLOAF, namesOfPlants.MEATLOAF.getPlantLength());

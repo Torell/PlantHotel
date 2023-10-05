@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CactusTest {
 
-    Cactus test = new Cactus(namesOfPlants.IGGE, 100);
+    Cactus test = new Cactus(namesOfPlants.IGGE.getPlantName(), namesOfPlants.IGGE.getPlantLength());
     @Test
     void mineralWaterAmount() {
         double expectedMineralWaterAmount = 0.2;
